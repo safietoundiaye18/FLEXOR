@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <!-- HEADER -->
+
     <Header>
         <!-- DEBUT TOP-BAR -->
         <div class="topbar">
@@ -42,23 +44,30 @@
                 </div>
 
                 <div class="right">
-                    <a class="nav" href="#">Home</a>
-                    <a class="nav" href="#">About</a>
-                    <a class="nav" href="#">Services</a>
-                    <a class="nav" href="#">Portfolio</a>
-                    <a class="nav" href="#">Team</a>
-                    <a class="nav" href="#">Pricing</a>
-                    <a class="nav" href="#">Blog</a>
-                    <a class="nav" href="#">contact</a>
+                    <nav>
+                        <ul>
+                            <li><a class="nav" href="#Home">Home</a></li>
+                            <li><a class="nav" href="#About">About</a></li>
+                            <li><a class="nav" href="#Services">Services</a></li>
+                            <li><a class="nav" href="#Portfolio">Portfolio</a></li>
+                            <li><a class="nav" href="#Team">Team</a></li>
+                            <li><a class="nav" href="#Pricing">Pricing</a></li>
+                            <li><a class="nav" href="#Blog">Blog</a></li>
+                            <li><a class="nav" href="#contact">contact</a></li>
+                        </ul>
+                    </nav>    
                 </div>
             </div>
         </div>
         <!-- FIN NAV-BAR -->
     </Header>
     <!-- DEBUT CONTENUE -->
+
+<!-- MAIN -->
+
     <main>
         <!-- DEBUT HOME -->
-        <section class="home">
+        <section class="home" id="Home">
             <div id="hero">
                 <div class="div1">
                     <h2>Welcome to Our Website</h2>
@@ -100,7 +109,7 @@
         <!-- FIN HOME -->
 
         <!-- DEBUT ABOUT -->
-        <section class="about">
+        <section class="about" id="About">
             <div class="div2">
                 <div class="image1">
                     <img class="image2" src="img/about.jpg" alt="">
@@ -113,7 +122,8 @@
                         eius incidunt reiciendis veritatis asperiores placeat.</p>
 
                     <div class="div4">
-                        <div class="image3"><img src="img/account.png" alt=""></div>
+                        <div class="image3"><img src="img/account.png" alt="">
+                    </div>
                         <div class="div5">
                             <h4>Ullamco laboris nisi ut aliquip consequat</h4>
                             <p class="p1">Magni facilis facilis repellendus cum excepturi quaerat praesentium libre
@@ -149,7 +159,6 @@
                                 veniam</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -169,12 +178,15 @@
             <div class="client">
                 <img src="img/client-3.png" alt="" class="cli">
             </div>
+
             <div class="client">
                 <img src="img/client-4.png" alt="" class="cli">
             </div>
+
             <div class="client">
                 <img src="img/client-5.png" alt="" class="cli">
             </div>
+
             <div class="client">
                 <img src="img/client-6.png" alt="" class="cli">
             </div>
@@ -183,16 +195,12 @@
 
         <!-- DEBUT SERVICES -->
 
-        <section class="services">
+        <section class="services" id="Services">
             <div class="service">
                 <h1>Services</h1>
                 <P class="P2">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</P>
             </div>
-
-
             <div class="cards">
-
-
                 <div class="card">
                     <img src="img/cardiaque.png" alt="" class="sensor">
                     <h3 class="trois">Nesciunt Mete</h3>
@@ -267,7 +275,6 @@
         </div>
         <div id="temoin">
             <div class="temoin">
-
                 <div class="contain" id="contain">
                     <img src="img/testimonials-5.jpg" alt="" class="testi">
                     <h2 id="h2">John Larson</h2>
@@ -280,11 +287,12 @@
                         <div><i class="fa-solid fa-star fa-xs" style="color: #ffb10a;"></i></div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
         <!-- FIN SERVICES -->
 
-        <section class="portfolio">
+        <!-- DEBUT PORTFOLIO -->
+        <section class="portfolio" id="Portfolio">
             <h1>Portfolio</h1>
             <p class="p4">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             <button class="bout1">All</button>
@@ -300,16 +308,19 @@
                     <div class="card1"><img class="card4" src="img/masonry-portfolio-6.jpg" alt=""></div>
                     <div class="card1"><img class="card5" src="img/masonry-portfolio-5.jpg" alt=""></div>
                     <div class="card1"><img class="card6" src="img/masonry-portfolio-4.jpg" alt=""></div>
-                    <div class="card1"><img class="card9" src="img/masonry-portfolio-9.jpg"alt=""></div>
+                    <div class="card1"><img class="card9" src="img/masonry-portfolio-9.jpg" alt=""></div>
                     <div class="card1"><img class="card8" src="img/masonry-portfolio-8.jpg" alt=""></div>
                     <div class="card1"><img class="card7" src="img/masonry-portfolio-7.jpg" alt=""></div>
                 </div>
         </section>
 
-        <section class="team">
+        <!-- FIN PORTFOLIO -->
+
+        <!-- DEBUT TEAM -->
+        <section class="team" id="Team">
             <div class="teams">
                 <h1>Team</h1>
-            <p class="P5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p class="P5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
             <div class="container5">
                 <div class="items">
@@ -334,16 +345,13 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
+        <!-- FIN TEAM -->
     </main>
     <!-- FIN CONTENUE -->
 
+    <footer>
+
+    </footer>
 </body>
 
 </html>

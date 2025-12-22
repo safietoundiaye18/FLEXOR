@@ -1,13 +1,31 @@
 html{
     scroll-behavior: smooth;
 }
-
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     
 }
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 3000;
+}
+
+.menu-icon.close{
+    display: none;
+}
+
 /*  FIN NAV-BAR */
 header {
     background-color: white;
@@ -62,8 +80,6 @@ p {
     color: white;
 }
 
-
-
 a:hover {
     color: #f04527;
     text-decoration: underline;
@@ -101,10 +117,15 @@ h1 {
 .nav {
     color: rgb(61, 60, 60);
 }
-
+.nav{
+    text-decoration: none;
+}
 .nav:hover {
     color: #f04527;
     text-decoration: none;
+}
+.droite1{
+    display: none;
 }
 /*  FIN NAV-BAR */
 
@@ -275,10 +296,12 @@ h4{
     background-color: white;
 }
 .sensor{
+    margin-top: -100px;
     background-color: #f04527;
     border-radius: 29px;
 }
 .H3, .P3{
+    padding: 30px;
     padding-bottom: 10px;
     color: rgb(61, 60, 60);
 }
@@ -288,7 +311,7 @@ h4{
     position: relative;
     z-index: 1;
     margin: 140px 30px;
-    padding: 5px;
+    padding: 0px;
     border-radius: 15px;
     background-color: rgba(245, 242, 242, 0.943)   
 }
@@ -306,7 +329,7 @@ h4{
     background-position:right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 65vh;
     width: 550px;
     border-radius: 15px;
 }
@@ -315,7 +338,7 @@ h4{
     background-position:right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 65vh;
     width: 550px;
     border-radius: 15px;
 }
@@ -324,7 +347,7 @@ h4{
     background-position:right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 65vh;
     width: 550px;
     border-radius: 15px;
 }
@@ -333,7 +356,7 @@ h4{
     background-position:right;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 65vh;
     width: 550px;
     border-radius: 15px;
 }
@@ -347,6 +370,7 @@ a{
 }
 .serv{
     height: 135vh;
+    margin-bottom: 40px;
 }
 .temoin{
     height: 70vh;
@@ -366,10 +390,15 @@ h5, #h2{
     text-align: center;
     
 }
-.testi{
-    height: 17vh;
+#test, .testi{
+    height: auto;
     width: 100px;
-    border-radius: 50px;
+}
+.testi{
+    margin-top: 10px;
+    position: relative;
+    margin: 0px 570px;
+     border-radius: 50px;
     box-shadow: 0px 0px 25px rgba(252, 252, 254, 0.5); 
 }
 .contain{
@@ -413,97 +442,8 @@ h5, #h2{
     color: white;
 }
 
-.container4{
-    margin-top: 30px;
-    height: 220vh;
-   
 
-}
-.cards1{
-   
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-.cardI{
-    
-    height: 65vh;
-    width: 355px;
-}
-.card2{
-    height: 40vh;
-    width: 340px;
-}
-.card3{
-    height: 35vh;
-    width: 360px;
-}
-.card4{
-    margin-top: 0px;
-    height: 80vh;
-    width: 345px;
-}
-.card5{
-    margin-top: -120px;
-    height: 80vh;
-    width: 340px;
-}
-.card6{
-    margin-top: -170px;
-    height: 40vh;
-    width: 350px;
-}
-.card7{
-    margin-top: -400px;
-    height: 35vh;
-    width: 330px;
-}
-.card8{
-    margin-top: -90px;
-    height: 40vh;
-    width: 330px;
-}
-.card9{
-    margin-top: 30px;
-    height: 50vh;
-    width: 330px;
-}
-/*  FIN PORTFOLIO */
-/*  DEBUT TEAM */
-.H2, .P5{
-    color: rgb(61, 60, 60);
-}
-.items{
-    margin-bottom: 40px;
-    text-align: center;
-    box-shadow: 0px 0px 15px grey;
-    border-radius: 10px;
-    
-}
-.container5{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-    
-}
-.teams{
-    text-align: center;
-}
-#img{
-    height: 40vh;
-    width: 250px;
-}
-.team{
-    background-color: rgb(248, 245, 241);
-     height: 100vh;
-    margin-top: 50px;
-    padding-top: 50px;
-}
-/*  FIN TEAM */
+
 
 
 @media screen and (max-width: 780px) {
@@ -513,160 +453,141 @@ h5, #h2{
         max-width: 100%;
         box-sizing: border-box;
     }
+   .menu-icon{
+        display: block;
+    }
 
-    /* HEADER */
-    header {
-        position: relative;
-        height: auto;
-
+    .container{
         
+        padding-left: 10px;
+        padding-right: 0px;
     }
-    ul{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        margin-top: 15px;
-        padding: 0;
-    } 
-    .right{
-        margin-top: 10px;
+    header{
+        position: fixed;
     }
-    .email{
-        text-decoration: none;
-    }
-    #contact{
-        text-decoration: none;
-    }
-    .container,
-    .container2 {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 15px;
-    }
-
-    
-
-    /* HOME */
-    .home,
-    #hero {
-        height: auto;
-    }
-
-    .div1 {
-        padding: 20px;
-        font-size: 1.4rem;
-        text-align: center;
-    }
-
-    .container3 {
-        grid-template-columns: 1fr;
-        padding: 20px 15px;
-        margin: 0;
-    }
-
-    .item,
-    .item1 {
+  
+    .menu-mobile{
+        position: fixed;
+        top: 0;
+        right: -100%;
         width: 100%;
-        height: auto;
+        height: 100vh;
+        background: white;
+        transition: 0.3s ease;
+        overflow-y: auto;
+        z-index: 2000;
+    }
+    .droite{
+        display: none;
+    }
+.droite1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+   .menu-icon{
+    margin-top: 25px;
+   }
+    #menu-toggle:checked ~ .menu-mobile{
+        right: 0;
     }
 
-    /* ABOUT */
-    .div2 {
-        flex-direction: column;
+    #menu-toggle:checked ~ .open{
+        display: none;
     }
 
-    .image2 {
-        width: 100%;
-        height: auto;
-        margin: 0;
+    #menu-toggle:checked ~ .close{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 25px;
     }
-
-    .div3 {
-        padding: 20px;
-    }
-
-    /* CLIENTS */
-    .clients {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        margin: 40px 0;
-        padding: 0 15px;
-    }
-
-    /* SERVICES */
-    .services {
-        height: auto;
-        padding-bottom: 40px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-        margin: 0 15px;
-    }
-
-    /* CARTES */
-    .cartes {
-        grid-template-columns: 1fr;
-        margin: 40px 15px;
-    }
-
-    .carte1,
-    .carte2,
-    .carte3,
-    .carte4 {
-        width: 100%;
-        height: 40vh;
-    }
-
-    .serv {
-        height: auto;
-    }
-
-    /* TÉMOIGNAGE */
-    .temoin,
-    #contain {
-        height: auto;
-    }
-
-    /* PORTFOLIO */
-    .container4 {
-        height: auto;
-        padding: 0 15px;
-    }
-
-    .cards1 {
+    .container3{
+        padding-left: 35px;
+        width: 100px;
         grid-template-columns: 1fr;
     }
 
-    .cardI,
-    .card2,
-    .card3,
-    .card4,
-    .card5,
-    .card6,
-    .card7,
-    .card8,
-    .card9 {
-        width: 100%;
-        height: auto;
-        margin-top: 0;
-    }
-
-    /* TEAM */
-    .container5 {
-        grid-template-columns: 1fr;
-        margin: 40px 15px;
-    }
-
-    #img {
-        width: 100%;
-        height: auto;
-    }
-
-    .team {
-        height: auto;
-        padding-bottom: 40px;
-    }
+  .home {
+    background-image: url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 285vh;
 }
 
+#hero{
+    height: 270vh ;
+}
+.item{
+    width: 340px;
+    height: 45vh;
+}
+.item1{
+    width: 340px;
+    height: 45vh;
+}
+.div2{
+    flex-direction: column;
+}
+.image2{
+    margin-left: 10px;
+    width: 370px;
+    height: auto;
+}
+.div3{
+    margin-left: 20px;
+}
+.clients{
+    flex-direction: column;
+    margin-left: 75px;
+}
+.cli{
+    width: 250px;
+}
+.cards{
+    grid-template-columns: 1fr;
+}
+.services{
+    background-color: rgb(248, 245, 241);
+    height: 250vh;
+}
+.cartes{
+    grid-template-columns: 1fr;
+}
+.carte1, .carte2, .carte3, .carte4{
+    width: 330px;
+    height: auto;
+    margin-left: 0px;
+}
+/* #temoin{
+    margin-top: 1040px;
+}
+.temoin{
+    background-size: contain;
+    width: 100%;
+    
+}
+#test, .testi{
+    height: auto;
+    width: 100px;
+}
+.testi{
+    margin-top: 0px;
+    position: relative;
+   margin: 0px 140PX;
+     border-radius: 50px;
+    box-shadow: 0px 0px 25px rgba(252, 252, 254, 0.5); 
+}
+#contain{
+    height: 35vh;
+    background-color: rgba(0, 0, 0, .5)
+} */
+
+
+}
